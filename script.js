@@ -1,5 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-
     const spotlight = document.querySelector('.spotlight');
 
     let spotlightSize = 'transparent 160px, rgba(0, 0, 0) 200px)';
@@ -72,4 +70,3 @@ window.addEventListener("DOMContentLoaded", () => {
             }
 
     setClock("timer", startLine);
-});
