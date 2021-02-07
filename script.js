@@ -27,9 +27,8 @@ window.addEventListener("DOMContentLoaded", () => {
         spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 102}% ${e.pageY / window.innerHeight * 102}%, ${spotlightSize}`;
 
     }
-});
 
-let startLine = "2000-05-07";
+    let startLine = "2000-05-07";
 
     function getTimeRemaining(startTime) {
         let t = Date.parse(new Date()) - Date.parse(startTime),
@@ -73,3 +72,4 @@ let startLine = "2000-05-07";
             }
 
     setClock("timer", startLine);
+});
