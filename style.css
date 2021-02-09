@@ -5,6 +5,7 @@ body {
     background-size: cover;
     height: 100vh;
     cursor: none;
+    overflow: hidden;
 }
 
 .block {
@@ -21,10 +22,10 @@ body {
     pointer-events: none;
     user-select: none;
     white-space: nowrap;
+    text-align: center;
 }
 .spotlight {
     position: absolute;
-    overflow: hidden;
     height: 104%;
     width: 104%;
     margin: -1%;
