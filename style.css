@@ -8,6 +8,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+    cursor: none;
 }
 
 .block {
