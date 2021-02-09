@@ -2,21 +2,21 @@
 
    const spotlight = document.querySelector('.spotlight');
 
-    let spotlightSize = 'transparent 160px, rgba(0, 0, 0) 200px)';
+    let spotlightSize = 'transparent 160px, rgba(0, 0, 0) 100px)';
 
     window.addEventListener('mousemove', e => updateSpotlight(e));
     window.addEventListener('touchmove', e => updateSpotlight(e));
 
     window.addEventListener('mousedown', e => {
 
-        spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.8) 300px)';
+        spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.8) 200px)';
 
         updateSpotlight(e);
 
     });
     window.addEventListener('touchstart', e => {
 
-        spotlightSize = 'transparent 130px, rgba(0, 0, 0) 150px)';
+        spotlightSize = 'transparent 130px, rgba(0, 0, 0) 100px)';
 
         updateSpotlight(e);
 
