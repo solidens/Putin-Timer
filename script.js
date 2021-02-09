@@ -1,12 +1,22 @@
-    const spotlight = document.querySelector('.spotlight');
+   window.addEventListener("DOMContentLoaded", function() {
+
+   const spotlight = document.querySelector('.spotlight');
 
     let spotlightSize = 'transparent 160px, rgba(0, 0, 0) 200px)';
 
     window.addEventListener('mousemove', e => updateSpotlight(e));
+    window.addEventListener('touchmove', e => updateSpotlight(e));
 
     window.addEventListener('mousedown', e => {
 
         spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.8) 300px)';
+
+        updateSpotlight(e);
+
+    });
+    window.addEventListener('touchstart', e => {
+
+        spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.8) 150px)';
 
         updateSpotlight(e);
 
@@ -20,9 +30,17 @@
 
     });
 
+    window.addEventListener('touchend', e => {
+
+        spotlightSize = 'transparent 160px, rgba(0, 0, 0) 100px)';
+
+        updateSpotlight(e);
+
+    });
+
     function updateSpotlight(e) {
 
-        spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 102}% ${e.pageY / window.innerHeight * 102}%, ${spotlightSize}`;
+        spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
 
     }
 
@@ -70,3 +88,4 @@
             }
 
     setClock("timer", startLine);
+});
